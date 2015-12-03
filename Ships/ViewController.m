@@ -117,7 +117,7 @@ float speedOfEnemy;
     enemyShip.center = CGPointMake(enemyShip.center.x, enemyShip.center.y + 2);
     
     if (CGRectIntersectsRect(enemyShip.frame, motherShip.frame)) {
-        lives = lives -1;
+        lives = lives - 1;
         livesString = [NSString stringWithFormat:@"LIVES: %i", lives];
         livesLabel.text = livesString;
         [enemyMovementTimer invalidate];
